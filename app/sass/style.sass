@@ -71,6 +71,7 @@ body textarea:required:valid
 		.header-phone
 			float: left
 			padding-top: 8px
+			font-weight: bold
 
 
 		.header-basket
@@ -84,9 +85,46 @@ body textarea:required:valid
 				text-transform: uppercase
 				color: $text-color
 				padding-left: 35px
+				font-weight: bold
 
 
 .header-bottom
+	padding: 15px 0
+
+	.menu
+			float: left
+
+	li
+		display: inline-block
+		float: left
+		margin-left: 35px
+
+		&:first-child
+			margin-left: 0
+
+		span
+			color: $accent-color
+
+		a
+			text-transform: uppercase
+			text-decoration: none
+			color: $text-color
+			font-size: 14px
+
+
+	.search-form
+			float: left
+			margin-left: 35px
+			color: $text-color
+
+			input[type="search"]
+				border: none
+				color: $text-color
+
+
+
+
+
 
 
 

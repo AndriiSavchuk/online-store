@@ -64,7 +64,8 @@ body textarea:required:valid {
       margin-right: 5px; }
     .header-top .contacts .header-phone {
       float: left;
-      padding-top: 8px; }
+      padding-top: 8px;
+      font-weight: bold; }
     .header-top .contacts .header-basket {
       float: right;
       border: 2px solid #EEEEEE;
@@ -74,7 +75,33 @@ body textarea:required:valid {
         text-decoration: none;
         text-transform: uppercase;
         color: #7e7f84;
-        padding-left: 35px; }
+        padding-left: 35px;
+        font-weight: bold; }
+
+.header-bottom {
+  padding: 15px 0; }
+  .header-bottom .menu {
+    float: left; }
+  .header-bottom li {
+    display: inline-block;
+    float: left;
+    margin-left: 35px; }
+    .header-bottom li:first-child {
+      margin-left: 0; }
+    .header-bottom li span {
+      color: #f45a40; }
+    .header-bottom li a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #7e7f84;
+      font-size: 14px; }
+  .header-bottom .search-form {
+    float: left;
+    margin-left: 35px;
+    color: #7e7f84; }
+    .header-bottom .search-form input[type="search"] {
+      border: none;
+      color: #7e7f84; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
