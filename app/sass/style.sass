@@ -52,63 +52,66 @@ body textarea:required:valid
 .header-top
 	padding: 30px 0
 	border-bottom: 1px solid #EEEEEE
-
 	.logo
 		float: left
+		transition: $transition
 		a
 			text-transform: uppercase
 			font-family: "Roboto Condensed", sans-serif
 			font-size: 23px
 			color: $headings-color
 			text-decoration: none
-
+			&:hover
+				color: $accent-color
+		&:hover
+			transform: $transform
 	.contacts
 		float: right
 		color: $text-color
 		font-size: 12px
-
 		.fa
 			margin-right: 5px
-
 		.header-phone
 			float: left
 			padding-top: 8px
 			font-weight: bold
-
 		.header-basket
 			float: right
 			border: 2px solid #EEEEEE
 			padding: 7px 25px
 			margin-left: 20px
+			transition: $transition
 			a
 				text-decoration: none
 				text-transform: uppercase
 				color: $text-color
 				padding-left: 35px
 				font-weight: bold
-
+				&:hover
+					color: $accent-color
+			&:hover
+				transform: $transform
 
 .header-bottom
 	padding: 15px 0
-
 	.menu
+		li
+			display: inline-block
 			float: left
-	li
-		display: inline-block
-		float: left
-		margin-top: 2px
-		margin-left: 35px
-		&:first-child
-			margin-left: 0
-		span
-			color: $accent-color
-		a
-			text-transform: uppercase
-			text-decoration: none
-			color: $text-color
-			font-size: 14px
-
-
+			margin-top: 2px
+			margin-left: 35px
+			transition: $transition
+			&:first-child
+				margin-left: 0
+			a
+				text-transform: uppercase
+				text-decoration: none
+				color: $text-color
+				font-size: 14px
+				&:hover
+					color: $accent-color
+			&:hover
+				transform: $transform
 	.search-form
 			float: left
 			margin-left: 35px
@@ -143,8 +146,6 @@ body textarea:required:valid
 					left: 30px
 					font-size: 14px
 					line-height: 1.5
-
-
 	.unslider-nav
 		max-width: 1170px
 		margin: 0 auto
@@ -154,12 +155,21 @@ body textarea:required:valid
 			li
 				height: 10px
 				width: 10px
-
 			li.unslider-active
 				height: 10px
 				width: 10px
 				background: $accent-color
 				border: $accent-color
+
+
+
+
+
+
+
+
+
+
 //ALWAYS END
 @import "media"
 
