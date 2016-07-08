@@ -2,7 +2,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ua"> <!--<![endif]-->
 
 <head>
 
@@ -19,14 +19,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!--<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">-->
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
    <link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/unslider.css">
+	<link rel="stylesheet" href="css/unslider-dots.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
 
@@ -65,6 +65,47 @@
 			</div>
 		</header>
 
+		<section class="slider">
+			<div class="container">
+				<div class="my-slider">
+					<ul>
+						<li>
+							<h2>RIGHT IS PINK. <br />LEFT IS BLUE</h2>
+							<p>
+								Inspired by Brasil’s bold colors and matching up to football’s on-pitch <br />
+								playmakers, these kicks are ready to stand out.
+							</p>
+							<img src="img/slide1.jpg" alt="Slide 1">
+						</li>
+						<li>
+							<h2>RIGHT IS PINK. <br />LEFT IS BLUE</h2>
+							<p>
+								Inspired by Brasil’s bold colors and matching up to football’s on-pitch <br />
+								playmakers, these kicks are ready to stand out.
+							</p>
+							<img src="img/slide2.jpg" alt="Slide 2">
+						</li>
+						<li>
+							<h2>RIGHT IS PINK. <br />LEFT IS BLUE</h2>
+							<p>
+								Inspired by Brasil’s bold colors and matching up to football’s on-pitch <br />
+								playmakers, these kicks are ready to stand out.
+							</p>
+							<img src="img/slide3.jpg" alt="Slide 3">
+						</li>
+						<li>
+							<h2>RIGHT IS PINK. <br />LEFT IS BLUE</h2>
+							<p>
+								Inspired by Brasil’s bold colors and matching up to football’s on-pitch <br />
+								playmakers, these kicks are ready to stand out.
+							</p>
+							<img src="img/slide4.jpg" alt="Slide 4">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<div class="hidden"></div>
 
 		<div class="loader">
@@ -82,6 +123,16 @@
 		<script src="libs/waypoints/waypoints.min.js"></script>
 		<script src="libs/animate/animate-css.js"></script>
 		<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+		<script src="js/unslider-min.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+				$('.my-slider').unslider({
+					autoplay: false,
+					speed: 900,
+					arrows: false,
+				});
+			});
+		</script>
 
 		<script src="js/common.js"></script>
 
