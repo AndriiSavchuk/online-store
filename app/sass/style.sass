@@ -55,6 +55,9 @@ body textarea:required:valid
 	.logo
 		float: left
 		transition: $transition
+		&:hover
+			transform: $transform
+
 		a
 			text-transform: uppercase
 			font-family: "Roboto Condensed", sans-serif
@@ -63,8 +66,9 @@ body textarea:required:valid
 			text-decoration: none
 			&:hover
 				color: $accent-color
-		&:hover
-			transform: $transform
+
+
+
 	.contacts
 		float: right
 		color: $text-color
@@ -81,6 +85,9 @@ body textarea:required:valid
 			padding: 7px 25px
 			margin-left: 20px
 			transition: $transition
+			&:hover
+				transform: $transform
+
 			a
 				text-decoration: none
 				text-transform: uppercase
@@ -89,12 +96,13 @@ body textarea:required:valid
 				font-weight: bold
 				&:hover
 					color: $accent-color
-			&:hover
-				transform: $transform
+
+
 
 .header-bottom
 	padding: 15px 0
 	.menu
+		float: left
 		li
 			display: inline-block
 			float: left
@@ -103,6 +111,9 @@ body textarea:required:valid
 			transition: $transition
 			&:first-child
 				margin-left: 0
+			&:hover
+				transform: $transform
+
 			a
 				text-transform: uppercase
 				text-decoration: none
@@ -110,8 +121,9 @@ body textarea:required:valid
 				font-size: 14px
 				&:hover
 					color: $accent-color
-			&:hover
-				transform: $transform
+
+
+
 	.search-form
 			float: left
 			margin-left: 35px
@@ -146,6 +158,7 @@ body textarea:required:valid
 					left: 30px
 					font-size: 14px
 					line-height: 1.5
+
 	.unslider-nav
 		max-width: 1170px
 		margin: 0 auto

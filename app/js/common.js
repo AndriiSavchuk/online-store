@@ -39,6 +39,14 @@ $(function() {
 	
 });
 
+$(document).ready(function($) {
+	$('.my-slider').unslider({
+		autoplay: false,
+		speed: 900,
+		arrows: false
+	});
+});
+
 $(window).load(function() {
 
 	$(".loader_inner").fadeOut();
