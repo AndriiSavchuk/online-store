@@ -30,7 +30,8 @@ body {
   position: relative;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 2000px; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -133,10 +134,10 @@ body textarea:required:valid {
       margin-left: 2px;
       color: #7e7f84; }
 
-.slider .my-slider ul li {
+#slider .my-slider ul li {
   position: relative;
   color: #f45a40; }
-  .slider .my-slider ul li h2 {
+  #slider .my-slider ul li h2 {
     position: absolute;
     top: 200px;
     left: 30px;
@@ -144,26 +145,47 @@ body textarea:required:valid {
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.1; }
-  .slider .my-slider ul li p {
+  #slider .my-slider ul li p {
     position: absolute;
     top: 340px;
     left: 30px;
     font-size: 14px;
     line-height: 1.5; }
 
-.slider .unslider-nav {
+#slider .unslider-nav {
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
   top: -40px; }
-  .slider .unslider-nav ol li {
+  #slider .unslider-nav ol li {
     height: 10px;
     width: 10px; }
-  .slider .unslider-nav ol li.unslider-active {
+  #slider .unslider-nav ol li.unslider-active {
     height: 10px;
     width: 10px;
     background: #f45a40;
     border: #f45a40; }
+
+#categories {
+  padding: 30px 0; }
+  #categories .category {
+    float: left;
+    width: 31.6%;
+    margin-left: 2.6%; }
+    #categories .category:first-child {
+      margin-left: 0; }
+    #categories .category h2 {
+      font-size: 23px;
+      margin-top: 26px; }
+      #categories .category h2 a {
+        color: #f45a40;
+        text-decoration: none; }
+        #categories .category h2 a:hover {
+          text-decoration: underline; }
+    #categories .category p {
+      font-size: 14px;
+      color: #7e7f84;
+      margin-top: 19px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -181,10 +203,10 @@ body textarea:required:valid {
     width: 200px;
     max-width: 100%; }
   /*Slider*/
-  .slider .my-slider ul li h2 {
+  #slider .my-slider ul li h2 {
     top: 170px;
     font-size: 50px; }
-  .slider .my-slider ul li p {
+  #slider .my-slider ul li p {
     top: 280px;
     left: 30px; } }
 
@@ -198,39 +220,51 @@ body textarea:required:valid {
       width: 250px;
       max-width: 100%; }
   /*Slider*/
-  .slider .my-slider ul li h2 {
+  #slider .my-slider ul li h2 {
     top: 120px;
     font-size: 40px; }
-  .slider .my-slider ul li p {
+  #slider .my-slider ul li p {
     top: 220px;
     left: 30px; }
-  .slider .unslider-nav {
+  #slider .unslider-nav {
     top: -40px; }
-    .slider .unslider-nav ol li {
+    #slider .unslider-nav ol li {
       height: 7px;
       width: 7px; }
-    .slider .unslider-nav ol li.unslider-active {
+    #slider .unslider-nav ol li.unslider-active {
       height: 7px;
-      width: 7px; } }
+      width: 7px; }
+  /*Categories*/
+  #categories {
+    padding: 30px 0; }
+    #categories .category {
+      float: none;
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 0; }
+      #categories .category img {
+        display: inline-block; } }
 
 @media only screen and (max-width: 620px) {
   /*Menu*/
   .header-bottom .menu li {
     margin-left: 23px; }
   /*Slider*/
-  .slider .my-slider ul li h2 {
+  #slider .my-slider ul li h2 {
     top: 100px;
     font-size: 40px; }
-  .slider .my-slider ul li p {
+  #slider .my-slider ul li p {
     top: 200px;
     left: 30px;
     font-size: 12px; }
-  .slider .unslider-nav {
+  #slider .unslider-nav {
     top: -40px; }
-    .slider .unslider-nav ol li {
+    #slider .unslider-nav ol li {
       height: 5px;
       width: 5px; }
-    .slider .unslider-nav ol li.unslider-active {
+    #slider .unslider-nav ol li.unslider-active {
       height: 5px;
       width: 5px; } }
 
@@ -242,10 +276,10 @@ body textarea:required:valid {
   .header-bottom .menu li {
     margin-left: 15px; }
   /*Slider*/
-  .slider .my-slider ul li h2 {
+  #slider .my-slider ul li h2 {
     top: 60px;
     font-size: 25px; }
-  .slider .my-slider ul li p {
+  #slider .my-slider ul li p {
     top: 120px;
     left: 30px;
     font-size: 11px; } }

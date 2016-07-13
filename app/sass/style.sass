@@ -34,6 +34,7 @@ body
 	line-height: 1.5
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
+	height: 2000px
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -138,7 +139,7 @@ body textarea:required:valid
 				color: $text-color
 
 
-.slider
+#slider
 	.my-slider
 		ul
 			li
@@ -174,9 +175,26 @@ body textarea:required:valid
 				background: $accent-color
 				border: $accent-color
 
-
-
-
+#categories
+	padding: 30px 0
+	.category
+		float: left
+		width: 31.6%
+		margin-left: 2.6%
+		&:first-child
+			margin-left: 0
+		h2
+			font-size: 23px
+			margin-top: 26px
+			a
+				color: $accent-color
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+		p
+			font-size: 14px
+			color: $text-color
+			margin-top: 19px
 
 
 
