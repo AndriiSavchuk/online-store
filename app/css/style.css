@@ -30,8 +30,7 @@ body {
   position: relative;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  height: 2000px; }
+  overflow-x: hidden; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -91,6 +90,7 @@ body textarea:required:valid {
       .header-top .contacts .header-basket a {
         text-decoration: none;
         text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
         color: #7e7f84;
         padding-left: 35px;
         font-weight: bold; }
@@ -117,6 +117,7 @@ body textarea:required:valid {
       .header-bottom .menu li a {
         text-transform: uppercase;
         text-decoration: none;
+        font-family: "Roboto Condensed", sans-serif;
         color: #7e7f84;
         font-size: 14px; }
         .header-bottom .menu li a:hover {
@@ -125,7 +126,8 @@ body textarea:required:valid {
     float: left;
     margin-left: 35px; }
     .header-bottom .search-form a {
-      color: #7e7f84; }
+      color: #7e7f84;
+      font-family: "Roboto Condensed", sans-serif; }
     .header-bottom .search-form input[type="search"] {
       width: 300px;
       max-width: 100%;
@@ -138,6 +140,7 @@ body textarea:required:valid {
   position: relative;
   color: #f45a40; }
   #slider .my-slider ul li h2 {
+    font-family: "Roboto Condensed", sans-serif;
     position: absolute;
     top: 200px;
     left: 30px;
@@ -175,17 +178,62 @@ body textarea:required:valid {
     #categories .category:first-child {
       margin-left: 0; }
     #categories .category h2 {
+      font-family: "Roboto Condensed", sans-serif;
       font-size: 23px;
       margin-top: 26px; }
       #categories .category h2 a {
         color: #f45a40;
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: "Roboto Condensed", sans-serif; }
         #categories .category h2 a:hover {
           text-decoration: underline; }
     #categories .category p {
       font-size: 14px;
       color: #7e7f84;
       margin-top: 19px; }
+
+#products {
+  padding: 30px 0; }
+  #products h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #67686d;
+    text-align: center;
+    padding-bottom: 40px; }
+  #products article {
+    width: 23%;
+    margin-left: 2.6%;
+    float: left; }
+    #products article:first-child {
+      margin-left: 0; }
+    #products article .content-block {
+      padding: 20px; }
+      #products article .content-block h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #67686d; }
+      #products article .content-block h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #67686d;
+        font-style: italic;
+        margin-bottom: 13px; }
+      #products article .content-block p {
+        font-size: 12px;
+        color: #7e7f84;
+        margin-bottom: 10px; }
+      #products article .content-block .price {
+        padding: 13px 0;
+        border-top: 1px solid #eeeeee; }
+        #products article .content-block .price span {
+          font-size: 14px;
+          color: #f45a40; }
+        #products article .content-block .price a {
+          color: #9e9fa3;
+          margin-left: 166px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -245,7 +293,15 @@ body textarea:required:valid {
       margin-top: 10px;
       margin-left: 0; }
       #categories .category img {
-        display: inline-block; } }
+        display: inline-block; }
+  /*Products*/
+  #products article {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+    text-align: center; }
+    #products article img {
+      max-width: 100%; } }
 
 @media only screen and (max-width: 620px) {
   /*Menu*/
@@ -266,7 +322,15 @@ body textarea:required:valid {
       width: 5px; }
     #slider .unslider-nav ol li.unslider-active {
       height: 5px;
-      width: 5px; } }
+      width: 5px; }
+  /*Products*/
+  #products article {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    text-align: center; }
+    #products article img {
+      max-width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

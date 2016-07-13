@@ -41,7 +41,7 @@ $(function() {
 
 $(document).ready(function($) {
 	$('.my-slider').unslider({
-		autoplay: false,
+		autoplay: true,
 		speed: 900,
 		arrows: false
 	});
