@@ -2,242 +2,237 @@
 @import "vars.sass"
 
 html.js .loader
-	background: none repeat scroll 0 0 #ffffff
-	bottom: 0
-	height: 100%
-	left: 0
-	position: fixed
-	right: 0
-	top: 0
-	width: 100%
-	z-index: 9999
-	.loader_inner
-		background-image: url("../img/preloader.gif")
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center center
-		background-color: #fff
-		height: 60px
-		width: 60px
-		margin-top: -30px
-		margin-left: -30px
-		left: 50%
-		top: 50%
-		position: absolute
+    background: none repeat scroll 0 0 #ffffff
+    bottom: 0
+    height: 100%
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    width: 100%
+    z-index: 9999
+    .loader_inner
+        background-image: url("../img/preloader.gif")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        background-color: #fff
+        height: 60px
+        width: 60px
+        margin-top: -30px
+        margin-left: -30px
+        left: 50%
+        top: 50%
+        position: absolute
 
 body
-	font-family: "RobotoRegular", sans-serif
-	font-weight: normal
-	font-size: 14px
-	min-width: 320px
-	position: relative
-	line-height: 1.5
-	-webkit-font-smoothing: antialiased
-	overflow-x: hidden
-
+    font-family: "RobotoRegular", sans-serif
+    font-weight: normal
+    font-size: 14px
+    min-width: 320px
+    position: relative
+    line-height: 1.5
+    -webkit-font-smoothing: antialiased
+    overflow-x: hidden
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: red
+    color: red
+
 body input:required:valid,
 body textarea:required:valid
-	color: green
+    color: green
 
 .hidden
-	display: none
+    display: none
 
 .container
-	max-width: 1170px
-	margin: 0 auto
+    max-width: 1170px
+    margin: 0 auto
 
 .header-top
-	padding: 30px 0
-	border-bottom: 1px solid #EEEEEE
-	.logo
-		float: left
-		transition: $transition
-		&:hover
-			transform: $transform
-		a
-			text-transform: uppercase
-			font-family: "Roboto Condensed", sans-serif
-			font-size: 23px
-			color: $headings-color
-			text-decoration: none
-			&:hover
-				color: $accent-color
+    padding: 30px 0
+    border-bottom: 1px solid #EEEEEE
+    .logo
+        float: left
+        transition: $transition
+        &:hover
+            transform: $transform
+        a
+            text-transform: uppercase
+            font-family: "Roboto Condensed", sans-serif
+            font-size: 23px
+            color: $headings-color
+            text-decoration: none
+            &:hover
+                color: $accent-color
 
-
-
-	.contacts
-		float: right
-		color: $text-color
-		font-size: 12px
-		.fa
-			margin-right: 5px
-		.header-phone
-			float: left
-			padding-top: 8px
-			font-weight: bold
-		.header-basket
-			float: right
-			border: 2px solid #EEEEEE
-			padding: 7px 25px
-			margin-left: 20px
-			transition: $transition
-			&:hover
-				transform: $transform
-			a
-				text-decoration: none
-				text-transform: uppercase
-				font-family: "Roboto Condensed", sans-serif
-				color: $text-color
-				padding-left: 35px
-				font-weight: bold
-				&:hover
-					color: $accent-color
-
-
+    .contacts
+        float: right
+        color: $text-color
+        font-size: 12px
+        .fa
+            margin-right: 5px
+        .header-phone
+            float: left
+            padding-top: 8px
+            font-weight: bold
+        .header-basket
+            float: right
+            border: 2px solid #EEEEEE
+            padding: 7px 25px
+            margin-left: 20px
+            transition: $transition
+            &:hover
+                transform: $transform
+            a
+                text-decoration: none
+                text-transform: uppercase
+                font-family: "Roboto Condensed", sans-serif
+                color: $text-color
+                padding-left: 35px
+                font-weight: bold
+                &:hover
+                    color: $accent-color
 
 .header-bottom
-	padding: 15px 0
-	.menu
-		float: left
-		li
-			display: inline-block
-			float: left
-			margin-top: 2px
-			margin-left: 35px
-			transition: $transition
-			&:first-child
-				margin-left: 0
-			&:hover
-				transform: $transform
-			a
-				text-transform: uppercase
-				text-decoration: none
-				font-family: "Roboto Condensed", sans-serif
-				color: $text-color
-				font-size: 14px
-				&:hover
-					color: $accent-color
+    padding: 15px 0
+    .menu
+        float: left
+        li
+            display: inline-block
+            float: left
+            margin-top: 2px
+            margin-left: 35px
+            transition: $transition
+            &:first-child
+                margin-left: 0
+            &:hover
+                transform: $transform
+            a
+                text-transform: uppercase
+                text-decoration: none
+                font-family: "Roboto Condensed", sans-serif
+                color: $text-color
+                font-size: 14px
+                &:hover
+                    color: $accent-color
 
-	.search-form
-			float: left
-			margin-left: 35px
-			a
-				color: $text-color
-				font-family: "Roboto Condensed", sans-serif
-			input[type="search"]
-				width: 300px
-				max-width: 100%
-				border: none
-				padding: 5px 0 5px 5px
-				margin-left: 2px
-				color: $text-color
-
+    .search-form
+        float: left
+        margin-left: 35px
+        a
+            color: $text-color
+            font-family: "Roboto Condensed", sans-serif
+        input[type="search"]
+            width: 300px
+            max-width: 100%
+            border: none
+            padding: 5px 0 5px 5px
+            margin-left: 2px
+            color: $text-color
 
 #slider
-	.my-slider
-		ul
-			li
-				position: relative
-				color: $accent-color
-				h2
-					font-family: "Roboto Condensed", sans-serif
-					position: absolute
-					top: 200px
-					left: 30px
-					font-size: 60px
-					font-weight: bold
-					margin-bottom: 20px
-					line-height: 1.1
-				p
-					position: absolute
-					top: 340px
-					left: 30px
-					font-size: 14px
-					line-height: 1.5
-	.unslider-nav
-		max-width: 1170px
-		margin: 0 auto
-		position: relative
-		top: -40px
-		ol
-			li
-				height: 10px
-				width: 10px
-			li.unslider-active
-				height: 10px
-				width: 10px
-				background: $accent-color
-				border: $accent-color
+    .my-slider
+        ul
+            li
+                position: relative
+                color: $accent-color
+                h2
+                    font-family: "Roboto Condensed", sans-serif
+                    position: absolute
+                    top: 200px
+                    left: 30px
+                    font-size: 60px
+                    font-weight: bold
+                    margin-bottom: 20px
+                    line-height: 1.1
+                p
+                    position: absolute
+                    top: 340px
+                    left: 30px
+                    font-size: 14px
+                    line-height: 1.5
+    .unslider-nav
+        max-width: 1170px
+        margin: 0 auto
+        position: relative
+        top: -40px
+        ol
+            li
+                height: 10px
+                width: 10px
+            li.unslider-active
+                height: 10px
+                width: 10px
+                background: $accent-color
+                border: $accent-color
 
 #categories
-	padding: 30px 0
-	.category
-		float: left
-		width: 31.6%
-		margin-left: 2.6%
-		&:first-child
-			margin-left: 0
-		h2
-			font-family: "Roboto Condensed", sans-serif
-			font-size: 23px
-			margin-top: 26px
-			a
-				color: $accent-color
-				text-decoration: none
-				font-family: "Roboto Condensed", sans-serif
-				&:hover
-					text-decoration: underline
-		p
-			font-size: 14px
-			color: $text-color
-			margin-top: 19px
+    padding: 30px 0
+    .category
+        float: left
+        width: 31.6%
+        margin-left: 2.6%
+        &:first-child
+            margin-left: 0
+        h2
+            font-family: "Roboto Condensed", sans-serif
+            font-size: 23px
+            margin-top: 26px
+            a
+                color: $accent-color
+                text-decoration: none
+                font-family: "Roboto Condensed", sans-serif
+                &:hover
+                    text-decoration: underline
+        p
+            font-size: 14px
+            color: $text-color
+            margin-top: 19px
 
 #products
-	padding: 30px 0
-	h2
-		font-family: "Roboto Condensed", sans-serif
-		font-size: 23px
-		text-transform: uppercase
-		color: $headings-color
-		text-align: center
-		padding-bottom: 40px
-	article
-		width: 23%
-		margin-left: 2.6%
-		float: left
-		&:first-child
-			margin-left: 0
-		.content-block
-			padding: 20px
-			h3
-				font-family: "Roboto Condensed", sans-serif
-				font-size: 18px
-				text-transform: uppercase
-				color: $headings-color
-			h4
-				font-family: "Roboto Condensed", sans-serif
-				font-size: 14px
-				text-transform: uppercase
-				color: $headings-color
-				font-style: italic
-				margin-bottom: 13px
-			p
-				font-size: 12px
-				color: $text-color
-				margin-bottom: 10px
-			.price
-				padding: 13px 0
-				border-top:  1px solid #eeeeee
-				span
-					font-size: 14px
-					color: $accent-color
-				a
-					color: #9e9fa3
-					margin-left: 166px
+    padding: 30px 0
+    h2
+        font-family: "Roboto Condensed", sans-serif
+        font-size: 23px
+        text-transform: uppercase
+        color: $headings-color
+        text-align: center
+        padding-bottom: 40px
+    article
+        width: 23%
+        margin-left: 2.6%
+        float: left
+        &:first-child
+            margin-left: 0
+        .content-block
+            padding: 20px
+            h3
+                font-family: "Roboto Condensed", sans-serif
+                font-size: 18px
+                text-transform: uppercase
+                color: $headings-color
+            h4
+                font-family: "Roboto Condensed", sans-serif
+                font-size: 14px
+                text-transform: uppercase
+                color: $headings-color
+                font-style: italic
+                margin-bottom: 13px
+            p
+                font-size: 12px
+                color: $text-color
+                margin-bottom: 10px
+            .price
+                padding: 13px 0
+                border-top: 1px solid #eeeeee
+                span
+                    font-size: 14px
+                    color: $accent-color
+                a
+                    color: #9e9fa3
+                    margin-left: 166px
 
 //ALWAYS END
 @import "media"
