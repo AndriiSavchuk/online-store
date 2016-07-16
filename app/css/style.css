@@ -358,8 +358,52 @@ body textarea:required:valid {
 
 #about .map {
   width: 35%;
-  float: left;
+  float: right;
   margin-left: 5%;
+}
+
+#subscribe {
+  background-color: #f45a40;
+}
+
+#subscribe h2 {
+  float: left;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 34px 0;
+}
+
+#subscribe h2 span {
+  font-weight: bold;
+}
+
+#subscribe .form {
+  float: right;
+  padding: 30px 0;
+}
+
+#subscribe .form input[type="email"] {
+  color: #67686d;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  font-size: 14px;
+  border: none;
+  margin-right: 10px;
+}
+
+#subscribe .form input[type="submit"] {
+  color: #fff;
+  background-color: #f56f58;
+  border: none;
+  padding: 14px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#footer {
+  height: 500px;
+  background-color: #2a2d34;
 }
 
 /*==========  Desktop First Method  ==========*/
