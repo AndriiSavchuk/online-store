@@ -223,7 +223,7 @@ body textarea:required:valid {
 }
 
 #slider .unslider-nav ol li.unslider-active {
-  background: #f45a40;
+  background-color: #f45a40;
   border: #f45a40;
 }
 
@@ -363,6 +363,7 @@ body textarea:required:valid {
 }
 
 #subscribe {
+  padding: 0 10px;
   background-color: #f45a40;
 }
 
@@ -403,7 +404,7 @@ body textarea:required:valid {
 
 #footer {
   background-color: #2a2d34;
-  padding: 40px 0;
+  padding: 40px 10px;
 }
 
 #footer article {
@@ -489,8 +490,11 @@ body textarea:required:valid {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/
   body {
+    padding: 0 10px;
+  }
+  /*About*/
+  #about {
     padding: 0 10px;
   }
 }
@@ -513,6 +517,28 @@ body textarea:required:valid {
   #slider .my-slider ul li p {
     top: 280px;
     left: 30px;
+  }
+  /*Subscribe*/
+  #subscribe h2 {
+    float: left;
+    font-size: 18px;
+    padding: 34px 0;
+  }
+  #subscribe .form input[type="email"] {
+    color: #67686d;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    margin-right: 5px;
+  }
+  #subscribe .form input[type="submit"] {
+    color: #fff;
+    background-color: #f56f58;
+    border: none;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
   }
 }
 
@@ -572,6 +598,55 @@ body textarea:required:valid {
   #products article img {
     max-width: 100%;
   }
+  /*About*/
+  #about .about-describe {
+    float: none;
+    width: 100%;
+  }
+  #about .about-describe h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 23px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  #about .about-describe p {
+    font-size: 14px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  #about .map {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  #about .map #googleMap {
+    display: inline-block;
+  }
+  /*Subscribe*/
+  #subscribe h2 {
+    float: none;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #subscribe .form {
+    float: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  /*Footer*/
+  #footer article {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+  }
+  #footer article h2 {
+    font-size: 18px;
+  }
+  #footer article .support li {
+    margin-bottom: 5px;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -609,6 +684,11 @@ body textarea:required:valid {
   }
   #products article img {
     max-width: 100%;
+  }
+  #footer article {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
   }
 }
 
