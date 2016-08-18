@@ -12,7 +12,7 @@ var gulp        = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-   return gulp.src('app/sass/**/*.sass')
+   return gulp.src('sass/**/*.sass')
        .pipe(sass({outputStyle: 'expanded',
           includePaths: require('node-bourbon').includePaths
         }).on('error', sass.logError))
@@ -67,7 +67,7 @@ gulp.task('img', function () {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
-    gulp.watch('app/sass/**/*.sass', ['sass']);
+    gulp.watch('sass/**/*.sass', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.html', browserSync.reload);
 });
